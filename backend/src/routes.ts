@@ -1,7 +1,7 @@
-import express, { Request, Response, NextFunction } from 'express';
 import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
 import dotenv from "dotenv";
+import express, { NextFunction, Request, Response } from 'express';
+import jwt from 'jsonwebtoken';
 dotenv.config();
 
 
@@ -10,7 +10,7 @@ const router = express.Router();
 const users: { id: number, name: string, email: string, password: string }[] = [{
     id: 1,
     name: 'Jeniffer',
-    email: 'jeniffer@email.com.br',
+    email: 'jeniffer@gmail.com.br',
     password: '$2a$10$wZ5QJ6fM5dI0Y5tL..uEvO9ZR5.Zq5H3J/i4G76L/6CZkpO8j1oV2' 
 }];
 
