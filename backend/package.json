@@ -1,15 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.ts",
+  "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/server.ts",
-    "dev": "nodemon --watch src --exec \"npm run build && ts-node src/server.ts\""
+    "dev": "nodemon --watch src --exec \"ts-node src/server.ts\"",
+    "start": "node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
